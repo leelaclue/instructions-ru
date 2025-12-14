@@ -40,22 +40,19 @@
             margin-bottom: 15px;
             line-height: 1.6;
         }
+        
+        /* Изменения здесь: Ссылки теперь выглядят как обычный текст */
         a {
-            color: #0d47a1;
-            text-decoration: none;
-            font-weight: bold;
+            color: inherit; /* Наследует цвет текста (черный/серый), а не синий */
+            text-decoration: none; /* Убирает подчеркивание */
+            cursor: pointer; /* Сохраняет курсор-указатель, чтобы показать кликабельность */
+            font-weight: bold; /* Делает текст жирным для выделения */
         }
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Можно добавить легкое подчеркивание при наведении, чтобы показать, что это кликабельно */
         }
-        .step-link {
-            display: inline-block;
-            background-color: #e3f2fd;
-            padding: 5px 10px;
-            border-radius: 4px;
-            color: #0d47a1;
-            margin-top: 5px;
-        }
+        /* Конец изменений для ссылок */
+        
         .note {
             background-color: #fffde7;
             border-left: 5px solid #ffeb3b;
@@ -73,6 +70,12 @@
         .feedback p {
             font-size: 1.1em;
             font-weight: 500;
+        }
+        /* Стиль для жирного текста ссылок */
+        .link-text {
+            font-size: 1.1em;
+            display: block; 
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -92,8 +95,7 @@
     <ol>
         <li>
             <strong>Перейдите по ссылке:</strong>
-            <br>
-            <a href="https://groups.google.com/g/leelaclue-test" target="_blank" class="step-link">LeelaClue Test Group</a>
+            <a href="https://groups.google.com/g/leelaclue-test" target="_blank" class="link-text">LeelaClue Test Group</a>
         </li>
         <li>
             Вы увидите экран, где будет указано, что вы не имеете прав доступа (как на прикрепленном изображении).
@@ -118,8 +120,7 @@
     <ol>
         <li>
             <strong>Кликните по следующей ссылке:</strong>
-            <br>
-            <a href="https://play.google.com/apps/testing/com.ikaengel.leelaclue" target="_blank" class="step-link">LeelaClue Tester Registration</a>
+            <a href="https://play.google.com/apps/testing/com.ikaengel.leelaclue" target="_blank" class="link-text">LeelaClue Tester Registration</a>
         </li>
         <li>
             На этой странице <strong>подтвердите</strong>, что вы хотите стать тестировщиком приложения LeelaClue.
@@ -134,8 +135,7 @@
     <ol>
         <li>
             <strong>Используйте следующую ссылку на вашем мобильном телефоне Android</strong> для установки приложения:
-            <br>
-            <a href="https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue" target="_blank" class="step-link">LeelaClue App</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue" target="_blank" class="link-text">LeelaClue App</a>
         </li>
         <li>
             Нажмите <strong>«Установить»</strong>.
