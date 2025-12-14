@@ -41,15 +41,16 @@
             line-height: 1.6;
         }
         
-        /* ИЗМЕНЕНИЯ CSS ДЛЯ ССЫЛОК */
+        /* ИЗМЕНЕНИЯ CSS ДЛЯ ССЫЛОК (ВСЕГДА ПОДЧЕРКНУТЫ) */
         a {
             color: inherit; /* Наследует цвет текста (#333) */
-            text-decoration: underline; /* ДОБАВЛЕНО ПОДЧЕРКИВАНИЕ */
+            text-decoration: underline; /* ССЫЛКИ ВСЕГДА ПОДЧЕРКНУТЫ */
             cursor: pointer;
             font-weight: bold;
         }
         a:hover {
-            color: #0d47a1; /* Опционально: можно сделать синим при наведении */
+            color: #0d47a1; /* Опционально: цвет при наведении */
+            /* text-decoration: underline; - Не нужно, так как уже подчеркнуто */
         }
         
         .note {
