@@ -21,14 +21,14 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #1e88e5; /* Яркий синий цвет */
+            color: #1e88e5;
             text-align: center;
             border-bottom: 3px solid #e0e0e0;
             padding-bottom: 10px;
             margin-bottom: 30px;
         }
         h2 {
-            color: #3949ab; /* Темно-синий/индиго */
+            color: #3949ab;
             margin-top: 25px;
             padding-bottom: 5px;
             border-bottom: 2px solid #e0e0e0;
@@ -41,17 +41,16 @@
             line-height: 1.6;
         }
         
-        /* Изменения здесь: Ссылки теперь выглядят как обычный текст */
+        /* ИЗМЕНЕНИЯ CSS ДЛЯ ССЫЛОК */
         a {
-            color: inherit; /* Наследует цвет текста (черный/серый), а не синий */
-            text-decoration: none; /* Убирает подчеркивание */
-            cursor: pointer; /* Сохраняет курсор-указатель, чтобы показать кликабельность */
-            font-weight: bold; /* Делает текст жирным для выделения */
+            color: inherit; /* Наследует цвет текста (#333) */
+            text-decoration: underline; /* ДОБАВЛЕНО ПОДЧЕРКИВАНИЕ */
+            cursor: pointer;
+            font-weight: bold;
         }
         a:hover {
-            text-decoration: underline; /* Можно добавить легкое подчеркивание при наведении, чтобы показать, что это кликабельно */
+            color: #0d47a1; /* Опционально: можно сделать синим при наведении */
         }
-        /* Конец изменений для ссылок */
         
         .note {
             background-color: #fffde7;
@@ -64,14 +63,13 @@
             text-align: center;
             margin-top: 40px;
             padding: 20px;
-            background-color: #f0f4c3; /* Светло-зеленый/лаймовый */
+            background-color: #f0f4c3;
             border-radius: 8px;
         }
         .feedback p {
             font-size: 1.1em;
             font-weight: 500;
         }
-        /* Стиль для жирного текста ссылок */
         .link-text {
             font-size: 1.1em;
             display: block; 
@@ -98,7 +96,7 @@
             <a href="https://groups.google.com/g/leelaclue-test" target="_blank" class="link-text">LeelaClue Test Group</a>
         </li>
         <li>
-            Вы увидите экран, где будет указано, что вы не имеете прав доступа (как на прикрепленном изображении).
+            Вы увидите экран, где будет указано, что вы не имеете прав доступа.
             <div class="note">
                 <strong>Обратите внимание:</strong> Если вы видите сообщение «Sie sind nicht berechtigt, auf diese Inhalte zuzugreifen» (У вас нет прав для доступа к этому контенту), это нормально, пока вы не присоединились.
             </div>
